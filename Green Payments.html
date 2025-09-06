@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Payments - Eco Finds Sustainable Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #065f46 0%, #047857 50%, #059669 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .eco-green {
+            color: #059669;
+        }
+        .bg-eco-green {
+            background-color: #059669;
+        }
+        .bg-eco-light {
+            background-color: #ecfdf5;
+        }
+        .text-earth {
+            color: #92400e;
+        }
+        .bg-earth {
+            background-color: #fef3c7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-leaf text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Green Payments</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-green-200 transition">About</a>
+                    <a href="#features" class="hover:text-green-200 transition">Features</a>
+                    <a href="#pricing" class="hover:text-green-200 transition">Pricing</a>
+                    <a href="#impact" class="hover:text-green-200 transition">Impact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">Eco Finds Sustainable Marketplace</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Revolutionary green payment solutions for the world's first carbon-neutral second-hand marketplace. Buy, sell, and trade sustainably while making a positive environmental impact.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-shopping-cart mr-2"></i><a href="browsing.html">shopping</a> 
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-800 transition">
+                    <i class="fas fa-plus-circle mr-2"></i><a href="odoo.html">Sell Items</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">About Eco Finds</h3>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're pioneering the future of sustainable commerce by combining cutting-edge green payment technology with a thriving second-hand marketplace ecosystem.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h4 class="text-2xl font-bold eco-green mb-4">Our Mission</h4>
+                    <p class="text-gray-700 mb-6">To create a circular economy where every transaction contributes to environmental restoration. We believe that commerce should heal the planet, not harm it.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-recycle text-2xl eco-green mr-4"></i>
+                            <span class="text-gray-700">100% Carbon Neutral Operations</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tree text-2xl eco-green mr-4"></i>
+                            <span class="text-gray-700">One Tree Planted Per Transaction</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-solar-panel text-2xl eco-green mr-4"></i>
+                            <span class="text-gray-700">Renewable Energy Powered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-eco-light p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold eco-green mb-4">Platform Statistics</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold eco-green">2.5M+</div>
+                            <div class="text-sm text-gray-600">Active Users</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold eco-green">850K+</div>
+                            <div class="text-sm text-gray-600">Items Sold</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold eco-green">1.2M</div>
+                            <div class="text-sm text-gray-600">Trees Planted</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold eco-green">95%</div>
+                            <div class="text-sm text-gray-600">Waste Diverted</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-eco-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Green Payment Features</h3>
+                <p class="text-xl text-gray-600">Advanced payment solutions designed for environmental impact</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-credit-card text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Carbon-Offset Payments</h4>
+                        <p class="text-gray-600">Every transaction automatically offsets carbon emissions through verified environmental projects.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-seedling text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Green Rewards Program</h4>
+                        <p class="text-gray-600">Earn eco-points for sustainable purchases that can be redeemed for tree planting and conservation projects.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Secure & Transparent</h4>
+                        <p class="text-gray-600">Blockchain-powered transparency with full traceability of environmental impact and secure transactions.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-mobile-alt text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Mobile-First Design</h4>
+                        <p class="text-gray-600">Seamless mobile payment experience with biometric authentication and instant notifications.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-chart-line text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Impact Tracking</h4>
+                        <p class="text-gray-600">Real-time dashboard showing your personal environmental impact and community contributions.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="text-center">
+                        <i class="fas fa-handshake text-4xl eco-green mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Community Integration</h4>
+                        <p class="text-gray-600">Connect with local environmental groups and participate in community sustainability initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Green Payments?</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-bold eco-green mb-6">For Buyers</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Verified Sustainable Products</h5>
+                                <p class="text-gray-600">Every item is authenticated for quality and sustainability standards.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-dollar-sign text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Cost Savings</h5>
+                                <p class="text-gray-600">Save up to 70% on premium brands while supporting circular economy.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-heart text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Feel-Good Shopping</h5>
+                                <p class="text-gray-600">Every purchase contributes to environmental restoration projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold eco-green mb-6">For Sellers</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-coins text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Competitive Commission</h5>
+                                <p class="text-gray-600">Industry-leading low fees with transparent pricing structure.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-shipping-fast text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Eco-Friendly Shipping</h5>
+                                <p class="text-gray-600">Carbon-neutral shipping options with biodegradable packaging.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-users text-2xl eco-green mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold mb-2">Engaged Community</h5>
+                                <p class="text-gray-600">Access to eco-conscious consumers who value sustainability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-eco-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">How It Works</h3>
+                <p class="text-xl text-gray-600">Simple steps to start your sustainable shopping journey</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-eco-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h4 class="text-xl font-bold mb-2">Sign Up</h4>
+                    <p class="text-gray-600">Create your eco-friendly account in under 2 minutes</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-eco-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h4 class="text-xl font-bold mb-2">Browse & Buy</h4>
+                    <p class="text-gray-600">Discover curated sustainable products from verified sellers</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-eco-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h4 class="text-xl font-bold mb-2">Green Payment</h4>
+                    <p class="text-gray-600">Pay securely with automatic carbon offset included</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-eco-green text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                    <h4 class="text-xl font-bold mb-2">Track Impact</h4>
+                    <p class="text-gray-600">Monitor your environmental contribution in real-time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">What Our Community Says</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center text-white font-bold">SJ</div>
+                        <div class="ml-4">
+                            <h5 class="font-bold">Dr. Shivashish Dash
+                            </h5>
+                            <p class="text-sm text-gray-600">Eco Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Finally, a platform where I can shop guilt-free! Knowing that every purchase plants a tree makes me feel amazing about my buying decisions."</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center text-white font-bold">MC</div>
+                        <div class="ml-4">
+                            <h5 class="font-bold">Jagannath Swain</h5>
+                            <p class="text-sm text-gray-600">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"As a seller, I love the eco-conscious community here. My customers genuinely care about sustainability, and the platform makes selling so easy."</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center text-white font-bold">ER</div>
+                        <div class="ml-4">
+                            <h5 class="font-bold">Yash Kumar</h5>
+                            <p class="text-sm text-gray-600">Environmental Scientist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The transparency in environmental impact tracking is incredible. I can see exactly how my purchases contribute to reforestation efforts."</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 bg-eco-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Transparent Pricing</h3>
+                <p class="text-xl text-gray-600">Simple, fair pricing with no hidden fees</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold text-center mb-4">Buyer</h4>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold eco-green">Free</span>
+                        <p class="text-gray-600">Always free to buy</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Unlimited browsing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Carbon offset included</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Impact tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Buyer protection</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-eco-green text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"><a href="browsing.html">Shopping</a></button>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-eco-green relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-eco-green text-white px-4 py-1 rounded-full text-sm">Most Popular</div>
+                    <h4 class="text-2xl font-bold text-center mb-4">Seller Basic</h4>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold eco-green">5%</span>
+                        <p class="text-gray-600">Commission per sale</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>List unlimited items</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Basic seller tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Eco-shipping options</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Seller protection</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-eco-green text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"><a href="odoo.html">Selling</a> </button>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold text-center mb-4">Seller Pro</h4>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold eco-green">3%</span>
+                        <p class="text-gray-600">Commission per sale</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Everything in Basic</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check eco-green mr-3"></i>
+                            <span>Featured listings</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-eco-green text-eco-green py-3 rounded-lg font-semibold hover:bg-eco-green hover:text-white transition">Upgrade to Pro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact -->
+    <section id="impact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-gray-800 mb-4">Our Environmental Impact</h3>
+                <p class="text-xl text-gray-600">Tracking our collective contribution to a sustainable future</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-bold eco-green mb-6">Impact Metrics</h4>
+                    <div class="space-y-6">
+                        <div class="bg-eco-light p-6 rounded-lg">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold">Carbon Offset</span>
+                                <span class="text-2xl font-bold eco-green">2,450 tons</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-eco-green h-3 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-eco-light p-6 rounded-lg">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold">Trees Planted</span>
+                                <span class="text-2xl font-bold eco-green">1.2M</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-eco-green h-3 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-eco-light p-6 rounded-lg">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold">Waste Diverted</span>
+                                <span class="text-2xl font-bold eco-green">3,200 tons</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="bg-eco-green h-3 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold eco-green mb-6">Monthly Growth</h4>
+                    <div style="height: 400px;">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-6">Ready to Make a Difference?</h3>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join thousands of eco-conscious consumers and sellers who are building a sustainable future, one transaction at a time.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg">
+                    <i class="fas fa-user-plus mr-2"></i><a href="wattsapp.html">Join the Community</a> 
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-800 transition text-lg" onclick="window.location.href='marketplace.html'">
+                    <i class="fas fa-store mr-2"></i><a href="odoo.html">Sell Now</a> 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-leaf text-2xl eco-green"></i>
+                        <h4 class="text-xl font-bold">Green Payments</h4>
+                    </div>
+                    <p class="text-gray-400">Sustainable commerce for a better tomorrow.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Platform</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">How it Works</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Security</a></li>
+                        <li><a href="#" class="hover:text-white transition">API</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Support</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Community</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">Connect</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-eco-green transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-eco-green transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-eco-green transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-2xl hover:text-eco-green transition"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Green Payments. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js for Impact Visualization
+        const ctx = document.getElementById('impactChart').getContext('2d');
+        const impactChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Trees Planted (thousands)',
+                    data: [45, 52, 68, 75, 89, 98, 112, 125, 138, 145, 158, 170],
+                    borderColor: '#059669',
+                    backgroundColor: 'rgba(5, 150, 105, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }, {
+                    label: 'Carbon Offset (tons)',
+                    data: [120, 135, 158, 172, 195, 210, 235, 258, 275, 290, 310, 325],
+                    borderColor: '#0d9488',
+                    backgroundColor: 'rgba(13, 148, 136, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
